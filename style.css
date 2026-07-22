@@ -1,0 +1,380 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+color:#c2185b;
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+margin-bottom:30px;
+
+}
+
+.hero h1{
+
+color:#c2185b;
+font-size:60px;
+
+max-width:900px;
+
+margin-bottom:40px;
+
+}
+
+.hero h3{
+
+font-family:"Great Vibes",cursive;
+
+font-size:70px;
+
+color:#c2185b;
+
+margin-bottom:40px;
+
+}
+
+button{
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:40px;
+
+background:rgba(248,209,220, 0.65);
+
+color:#c2185b;
+
+font-size:20px;
+
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:rgba(255,214,232, 0.55);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(139,46,95,.25);
+
+}
+.scene2{
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:80px 20px;
+
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+
+}
+
+.memory{
+
+max-width:800px;
+
+text-align:center;
+
+}
+
+.memory-photo{
+
+width:320px;
+
+border-radius:20px;
+
+margin-bottom:40px;
+
+box-shadow:0 0 30px rgba(255,255,255,.2);
+
+}
+
+#typing{
+
+font-size:42px;
+
+color:#c2185b;
+
+margin-bottom:30px;
+
+}
+
+.message{
+
+font-size:22px;
+
+line-height:2;
+
+}
+/* SCENE 3 */
+
+.scene3{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:url("image/photo1.jpg.jpeg");
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+}
+
+.glass{
+
+width:80%;
+
+max-width:700px;
+
+padding:50px;
+
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+
+backdrop-filter:blur(10px);
+
+border-radius:25px;
+
+text-align:center;
+
+color:#c2185b;
+
+}
+
+.glass h2{
+
+font-size:50px;
+
+color:#c2185b;
+
+margin-bottom:30px;
+
+}
+
+.glass p{
+
+font-size:24px;
+
+line-height:2;
+
+}
+
+/* ---------- SCENE 4 ---------- */
+
+.scene4{
+
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+.title{
+
+font-size:55px;
+
+margin-bottom:80px;
+
+color:#c2185b;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.card{
+
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+
+border-radius:25px;
+
+padding:40px;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+backdrop-filter:blur(8px);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px) scale(1.03);
+
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+
+}
+
+.card h2{
+
+margin-bottom:25px;
+
+font-size:30px;
+
+color:#c2185b;
+
+}
+
+.card p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#c2185b;
+
+}/* ========================= */
+/* FINAL SCENE */
+/* ========================= */
+
+.scene8{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:linear-gradient(135deg, #fff8f9, #ffeaf2, #ffd9e8);
+
+padding:30px;
+
+}
+
+.ending{
+
+max-width:800px;
+
+}
+
+#finalTitle{
+
+font-family:"Great Vibes",cursive;
+
+font-size:85px;
+
+color:#c2185b;
+
+margin-bottom:50px;
+
+opacity:0;
+
+animation:fadeUp 2s forwards;
+
+}
+
+#finalMessage{
+
+font-size:30px;
+
+line-height:2;
+
+color: #c2185b;
+
+opacity:0;
+
+animation:fadeUp 2s forwards;
+
+animation-delay:2s;
+
+}
+
+#signature{
+
+margin-top:60px;
+
+font-size:24px;
+
+color:#c2185b;
+
+opacity:0;
+
+animation:fadeUp 2s forwards;
+
+animation-delay:5s;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
